@@ -3,27 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+  <main class="main__wrapper">
+    <div class="main__person">
+      <div class="main__report">
+        <img src="images/image-jeremy.png" alt="Picture of Jeremy">
+        <div class="text__content">
+          <p class="text__report">Report for</p>
+          <h1 class="person__text">Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="main__options">
+        <p class="time__option" id="daily">Daily</p>
+        <p class="time__option" id="weekly">Weekly</p>
+        <p class="time__option" id="monthly">Monthly</p>
+      </div>
+    </div>
 
-  Daily
-  Weekly
-  Monthly
+    <ul class="time__wrapper">
+      <li class="item__work">
+        <div class="image__wrapper">
+          <img src="images/icon-work.svg" alt="work icon">
+        </div>
+        <div class="item__content">
+          <img src="images/icon-ellipsis.svg"  class="icon--elipsis" id="one" alt="">
+          <p class="item__subject">Work</p>
+          <div class="item__hours--content">
+            <p class="item__hours"><span class="text--hours"></span>32hrs</p>
+            <p class="item__hours--week">
+              Last Week - <span class="hours--span"></span>36hrs
+            </p>
+          </div>
+        </div
+        </li>
+    </ul>
+  </main>
 
-  Work
+ 
+  
+
+  <!-- Work
   5hrs <!-- daily -->
   Previous - 7hrs <!-- daily -->
   32hrs <!-- weekly -->

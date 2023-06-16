@@ -1,29 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 
 :root {
+  --ff-primary: "Rubik", sans-serif;
 
-    --ff-primary: 'Rubik', sans-serif;
+  --fs-300: 0.9375rem; /* 15px */
+  --fs-400: 1rem; /* 16px */
+  --fs-500: 1.125rem; /* 18px */
+  --fs-600: 1.5rem; /* 24px */
+  --fs-700: 2rem; /* 32px */
+  --fs-800: 2.5rem; /* 40px */
+  --fs-900: 3.5rem; /* 56px */
 
-    --fs-300: .9375rem; /* 15px */
-    --fs-400: 1rem; /* 16px */
-    --fs-500: 1.125rem; /* 18px */
-    --fs-700: 2.5rem; /* 40px */
-    --fs-800: 3.5rem; /* 56px */
+  --clr-work: hsl(15, 100%, 70%);
+  --clr-play: hsl(195, 74%, 62%);
+  --clr-study: hsl(348, 100%, 68%);
+  --clr-exercise: hsl(145, 58%, 55%);
+  --clr-social: hsl(264, 64%, 52%);
+  --clr-self-care: hsl(43, 84%, 65%);
+  --clr-profile-bg: hsl(246, 80%, 60%);
 
-    --clr-work: hsl(15, 100%, 70%);
-    --clr-play: hsl(195, 74%, 62%);
-    --clr-study: hsl(348, 100%, 68%);
-    --clr-exercise: hsl(145, 58%, 55%);
-    --clr-social: hsl(264, 64%, 52%);
-    --clr-self-care: hsl(43, 84%, 65%);
-    --clr-profile-bg: hsl(246, 80%, 60%);
+  --clr-background: hsl(226, 43%, 10%);
+  --clr-card-bg: hsl(226, 43%, 10%);
 
-    --clr-background: hsl(226, 43%, 10%);
-    --clr-card-bg: hsl(226, 43%, 10%);
-    
-    --clr-neutral-100: hsl(0, 0%, 100%);
-    --clr-neutral-300: hsl(236, 100%, 87%);
-    --clr-neutral-500: hsl(235, 45%, 61%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-300: hsl(236, 100%, 87%);
+  --clr-neutral-500: hsl(235, 45%, 61%);
+
+  --border-radius-base: 0.9375rem;
+}
+
+/* CSS RESET */
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--ff-primary);
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
 }
 
 
+
+
+
+/* FEM ATTRIB */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
